@@ -1,0 +1,26 @@
+{
+    "name": "dyte react integration example",
+    "repository": "https://github.com/dyte-in/react-integration-example",
+    "keywords": ["dyte", "express", "node","react"],
+    "env": {
+        "REACT_APP_DYTE_ORG_ID": {
+            "description": "Organization ID for dyte."
+        },
+        "REACT_APP_DYTE_API_KEY": {
+            "description": "API KEY for dyte organization."
+        }, 
+        "REACT_APP_DYTE_BASE_URL": {
+            "description": "Base URL for calling dyte APIs"    
+        }
+    },
+    "buildpacks": [
+        {
+          "url": "heroku/nodejs"
+        }
+      ],
+      "formation": {
+        "web": {
+          "quantity": 1
+        }
+      }
+  }
